@@ -1,0 +1,20 @@
+    @font-face{
+    font-family: 'proxima';
+    src: url('fonts/proxima/ProximaNova-Regular.otf');
+}
+
+body {
+   
+     background-color: #f6f4f7;
+
+}
+
+#logo_hide{
+   
+
+     
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-name: logo_hide;
+    animation-delay: 3s;
+}

@@ -1,0 +1,368 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100vh; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #e4e4e4; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition-property: width;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #818181;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 0 8px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+   
+    transition: 0.3s;
+        font-size: 12px;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #818181;
+}
+
+.sidenav a span {
+      font-size: 12px;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #818181;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+
+
+.navcont:hover .st0, .navcont:hover a{
+    fill: #f5a503;
+    color: #31353d;
+}
+
+.navcont:hover .st1{
+    fill: #f5a503;
+    stroke: #f5a503;
+}
+
+.navcont {
+  margin-bottom: 2vh;
+  height: 50px;
+}
+
+.navcont :nth-child(1){
+  height: 30px;
+}
+.navcont :nth-child(2){
+  height: 20px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+ #logo_nav{
+  height: 50px;
+  background-image: url('../images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  margin-bottom: 20%;
+}
+
+
+  .sidenav2 {
+    height: 100vh; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0;
+    left: 80px;
+    background-color: #f9f9f9; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition-property: width;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 2px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* The navigation menu links */
+.sidenav2 a {
+    
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: inline;
+    transition: 0.3s;
+    line-height: 55px;
+    padding-top: 8px; 
+    position: :absolute;
+    left: :80px;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav2 a:hover, .offcanvas a:focus{
+    color: #1695a3;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
+    .sidenav2 {padding-top: 15px;}
+    .sidenav2 a {font-size: 15px;}
+}*/
+  
+.sidenav2 .sportsName {
+    display: block;
+    width: 150px;
+    height: 55px;
+    background-color: #f9f9f9;
+    margin: auto;
+    border-bottom: 1px solid #f2f2f2;
+
+
+
+}
+
+.sidenav2 .sportsIcon {
+    width: 50px;
+    height: 55px;
+    background-color:#f9f9f9;
+    display: inline;
+    float: left;
+   
+    
+    border-bottom: 1px solid #f2f2f2;
+   
+}
+
+#nav-trigger{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 0;
+  background-color: #e4e4e4;
+  transition-duration: 0.5s;
+  z-index: 5;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+
+  svg{
+      width: 25px;
+      height: 25px;
+  }
+
+}
+@media only screen and (max-width: 700px) {
+    .sidenav a{
+        font-size: 2em;
+        margin: 2vh auto;
+        margin: 0;
+    }
+    nav{
+        height: 55px;
+    }
+    svg{
+        width: 10vh;
+        margin: 0;
+    }
+    .navcont{
+      margin: 5% auto;
+    }
+    #logo_nav{
+      height: 20vh;
+      margin: 10%;
+    }
+    .sidenav2{
+    height: 0; /* 100% Full-height */
+    width: 100vw; /* 0 width - change this with JavaScript */
+    position: relative; /* Stay in place */
+    z-index: 4; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #e4e4e4;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0; /* Place content 60px from the top */
+    transition-property: height;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 2px 1px 2px rgba(0,0,0,0.1);
+    }
+    .sidenav2 a{
+      font-size: 1.4em;
+      text-align: center;
+    }
+    .sidenav2 .sportsName{
+      width: 60vw;
+      margin: 0 auto;
+      background-color: #efefef;
+      border-bottom: 1px solid #eceaea;
+    }
+.sidenav2 .sportsIcon {
+    
+    background-color:#efefef;
+    display: inline;
+
+    float: left;
+   
+    
+    border-bottom: 1px solid #eceaea;
+   
+}
+
+}
+
+nav{
+  margin: 0;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+nav{
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    background-color: #e4e4e4;
+}
+
+.nav-head{
+    margin: 5px auto;
+    width: 100vw;
+    font-size: 2em;
+
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+
+ .sports-cont {
+    width: 100%;
+    min-height: 220px;
+    padding: 2.2rem 0;
+    background-color: #1695A3;
+    color: #fff;
+}
+.sports-cont h3 {
+  margin: 0 0 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+ .sports-cont .rank {
+  width: 100%;
+  text-align: center;
+}
+
+ .sports-cont .rank .scores {
+  width: 135px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    color: #fff;
+}
+
+ .sports-cont .rank .scores strong {
+  font-size: .857rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: block;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding-left: 20px;
+     margin-left: 30px;
+     line-height: 1.07em;
+     color: #fff;
+}
+
+ .sports-cont .rank .scores .home-games-in-number__value {
+  font-size: 2.625rem;
+    font-weight: 300;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding-left: 20px;
+    min-height: 0;
+    line-height: 1.825rem;
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+#layerfix{
+  position: relative;
+  z-index: -1;
+}
+
+/*Menu Opener*/
+
+
+.cd-nav-trigger {
+  position: absolute;
+  z-index: 6;
+  top: 5px;
+  left: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* replace text with image */
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  pointer-events: auto;
+  background-color: rgba(228,228,228,0.8);
+}
+
+
+.cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before {
+  /* this is the hamburger icon */
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: #004358;
+  left: 10px;
+}
+.cd-nav-trigger span {
+  /* middle line of the hamburger icon */
+  left: 50%;
+  top: 50%;
+ }
+.cd-nav-trigger span::after, .cd-nav-trigger span::before {
+  /* top and bottom lines of the hamburger icon */
+  content: '';
+  bottom: 0px;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;}
+
+.cd-nav-trigger span::before {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.cd-nav-trigger span::after {
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+

@@ -1,0 +1,54 @@
+@font-face{
+  font-family: 'anklepants';
+  src: url('../fonts/anklepants.ttf');
+}
+h5{
+  font-family: 'Source Sans Pro';
+}
+.abcd h1,.score{
+  text-align: center;
+  font-family: anklepants;
+}
+
+
+.resultcss h3{
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.resultcss img, .resultcss h5{
+  margin: 0;
+  padding: 0;
+}
+
+.iitlogo img{
+  width: 80%;
+  margin: 20px 0 10px 0;
+}
+.iitlogo {
+  margin: auto 0;
+}
+.resultcss {
+  text-align: center;
+  margin-bottom: 100px; 
+  background-color: #eee;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border: 3px double #0097a7;
+}
+.resultcss *{
+  text-align: center;
+}
+
+.score{
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 1.2em;
+}
+
+.abcd p{
+  font-size: 1em;
+  margin: 0 auto;
+}
